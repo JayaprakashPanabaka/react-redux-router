@@ -1,0 +1,7 @@
+1. store: The store is a single JS object that represents the application's entire store. It holds the current state and provides methods to update it. The store is typically created at the root level of application.
+
+2. Actions: Actions are plain JS objects that describe events or users interactions. They have a 'type' property that indicates the type of action and can include additional data to describe the action.
+
+3. Reducers: Reducers are pure functions that specify how the applications state should in response to an action. They take current state and an action as input and return a new state. Reducers are responsible for updating the in predictable way.
+
+4. Dispatch: Dispatch is a method provided by the store that allows you to send actions to store. When an action is dipatched, the store invokes the reducers to update the state.
